@@ -1,0 +1,24 @@
+{
+  "name": "be-server-middleware-validation-sanitization-orhanguezel",
+  "version": "1.0.0",
+  "description": "In this particular exercise, you will be writing Express middleware to validate that a user is above 18, and to sanitize the user input.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dci-fbw-wd-24-d05/be-server-middleware-validation-sanitization-Orhanguezel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/dci-fbw-wd-24-d05/be-server-middleware-validation-sanitization-Orhanguezel/issues"
+  },
+  "homepage": "https://github.com/dci-fbw-wd-24-d05/be-server-middleware-validation-sanitization-Orhanguezel#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "destination": "Paris, France",
+      "hotel": "Eiffel Grand Hotel",
+      "price": 1200,
+      "currency": "EUR",
+      "duration": "5 nights",
+      "available": true
+    },
+    {
+      "id": 2,
+      "destination": "New York, USA",
+      "hotel": "Times Square Hotel",
+      "price": 1500,
+      "currency": "USD",
+      "duration": "7 nights",
+      "available": true
+    },
+    {
+      "id": 3,
+      "destination": "Tokyo, Japan",
+      "hotel": "Shinjuku Grand Inn",
+      "price": 1800,
+      "currency": "JPY",
+      "duration": "6 nights",
+      "available": false
+    },
+    {
+      "id": 4,
+      "destination": "Rome, Italy",
+      "hotel": "Colosseum View Resort",
+      "price": 1100,
+      "currency": "EUR",
+      "duration": "4 nights",
+      "available": true
+    },
+    {
+      "id": 5,
+      "destination": "Istanbul, Turkey",
+      "hotel": "Bosphorus Luxury Suites",
+      "price": 900,
+      "currency": "TRY",
+      "duration": "5 nights",
+      "available": true
+    },
+    {
+      "id": 6,
+      "destination": "Sydney, Australia",
+      "hotel": "Opera House Hotel",
+      "price": 2000,
+      "currency": "AUD",
+      "duration": "7 nights",
+      "available": false
+    },
+    {
+      "id": 7,
+      "destination": "Cape Town, South Africa",
+      "hotel": "Table Mountain Lodge",
+      "price": 1300,
+      "currency": "ZAR",
+      "duration": "6 nights",
+      "available": true
+    },
+    {
+      "id": 8,
+      "destination": "Rio de Janeiro, Brazil",
+      "hotel": "Copacabana Beach Resort",
+      "price": 1400,
+      "currency": "BRL",
+      "duration": "5 nights",
+      "available": true
+    }
+  ]
+  

@@ -1,0 +1,24 @@
+{
+  "name": "be-server-user-manager-orhanguezel",
+  "version": "1.0.0",
+  "description": "Create an API to manage users with endpoints for listing, creating, updating and deleting users.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dci-fbw-wd-24-d05/be-server-user-manager-Orhanguezel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/dci-fbw-wd-24-d05/be-server-user-manager-Orhanguezel/issues"
+  },
+  "homepage": "https://github.com/dci-fbw-wd-24-d05/be-server-user-manager-Orhanguezel#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "be-server-car-api-orhanguezel",
+  "version": "1.0.0",
+  "description": "In this project we will create our own Car API, using the HTTP methods **GET**, **POST**, **PATCH**, **DELETE**. You will also be working with request parameters, practise sending responses with different response codes.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dci-fbw-wd-24-d05/be-server-car-api-Orhanguezel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/dci-fbw-wd-24-d05/be-server-car-api-Orhanguezel/issues"
+  },
+  "homepage": "https://github.com/dci-fbw-wd-24-d05/be-server-car-api-Orhanguezel#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

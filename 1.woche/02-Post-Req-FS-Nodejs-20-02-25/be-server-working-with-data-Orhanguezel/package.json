@@ -1,0 +1,25 @@
+{
+  "name": "be-server-working-with-data-orhanguezel",
+  "version": "1.0.0",
+  "description": "The purpose of this exercise is to practice basic file I/O and Express endpoints, by creating a simple server for recording and listing animal sightings.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dci-fbw-wd-24-d05/be-server-working-with-data-Orhanguezel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/dci-fbw-wd-24-d05/be-server-working-with-data-Orhanguezel/issues"
+  },
+  "homepage": "https://github.com/dci-fbw-wd-24-d05/be-server-working-with-data-Orhanguezel#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "winston": "^3.17.0"
+  }
+}

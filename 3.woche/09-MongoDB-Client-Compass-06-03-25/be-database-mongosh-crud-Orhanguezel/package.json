@@ -1,0 +1,24 @@
+{
+  "name": "be-database-mongosh-crud-orhanguezel",
+  "version": "1.0.0",
+  "description": "This exercise is about practicing the four primary data operations - Create, Read, Update, Delete (also known as \"CRUD\") in MongoDB using `mongosh`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dci-fbw-wd-24-d05/be-database-mongosh-crud-Orhanguezel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/dci-fbw-wd-24-d05/be-database-mongosh-crud-Orhanguezel/issues"
+  },
+  "homepage": "https://github.com/dci-fbw-wd-24-d05/be-database-mongosh-crud-Orhanguezel#readme",
+  "dependencies": {
+    "mongodb": "^6.14.2"
+  }
+}

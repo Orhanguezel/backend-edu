@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Jane Austen",
+    "status": "I find myself in tolerable health and spirits."
+  },
+  {
+    "id": 2,
+    "name": "Charles Dickens",
+    "status": "I am a rather elderly"
+  }
+]

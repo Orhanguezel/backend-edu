@@ -1,0 +1,25 @@
+{
+  "name": "post-request-fs-curl",
+  "version": "1.0.0",
+  "description": "## Branches :",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dci-fbw-wd-24-d05/Post-request-fs-curl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/dci-fbw-wd-24-d05/Post-request-fs-curl/issues"
+  },
+  "homepage": "https://github.com/dci-fbw-wd-24-d05/Post-request-fs-curl#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

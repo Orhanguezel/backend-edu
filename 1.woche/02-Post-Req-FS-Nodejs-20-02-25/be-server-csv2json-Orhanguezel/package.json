@@ -1,0 +1,11 @@
+{
+  "name": "csv-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "express": "^4.21.2"
+  }
+}

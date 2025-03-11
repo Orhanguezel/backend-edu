@@ -1,0 +1,24 @@
+{
+  "name": "be-server-simple-express-server-orhanguezel",
+  "version": "1.0.0",
+  "description": "This project will allow you to practice setting up a server that will handle simple requests in Express.js.",
+  "main": "serrver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dci-fbw-wd-24-d05/be-server-simple-express-server-Orhanguezel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/dci-fbw-wd-24-d05/be-server-simple-express-server-Orhanguezel/issues"
+  },
+  "homepage": "https://github.com/dci-fbw-wd-24-d05/be-server-simple-express-server-Orhanguezel#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

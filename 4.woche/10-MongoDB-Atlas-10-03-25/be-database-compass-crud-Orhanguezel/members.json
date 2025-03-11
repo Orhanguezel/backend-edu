@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Christian",
+    "age": 30,
+    "gender": "M",
+    "exp": 8,
+    "subjects": ["Python", "Data Structures", "Algorithms"],
+    "type": "Full Time",
+    "qualification": "Masters"
+  },
+  {
+    "name": "Bianca",
+    "age": 32,
+    "gender": "F",
+    "exp": 10,
+    "subjects": ["Python", "Data Structures", "Machine Learning"],
+    "type": "Part Time",
+    "qualification": "Ph.D"
+  },
+  {
+    "name": "Cheng",
+    "age": 28,
+    "gender": "M",
+    "exp": 6,
+    "subjects": ["Data Structures", "Algorithms", "Neural Networks"],
+    "type": "Full Time",
+    "qualification": "Masters"
+  },
+  {
+    "name": "Djamila",
+    "age": 33,
+    "gender": "F",
+    "exp": 7,
+    "subjects": ["Data Mining", "Neural Networks", "Operating Systems"],
+    "type": "Full Time",
+    "qualification": "Bachelor"
+  },
+  {
+    "name": "Elias",
+    "age": 31,
+    "gender": "M",
+    "exp": 9,
+    "subjects": ["Operating Systems", "Compilers", "Computer Architecture"],
+    "type": "Part Time",
+    "qualification": "Ph.D"
+  },
+  {
+    "name": "Fatima",
+    "age": 34,
+    "gender": "F",
+    "exp": 11,
+    "subjects": ["Compilers", "Computer Architecture", "Cloud Computing"],
+    "type": "Full Time",
+    "qualification": "Masters"
+  },
+  {
+    "name": "Gustav",
+    "age": 29,
+    "gender": "M",
+    "exp": 5,
+    "subjects": ["Computer Networks", "Information Security", "Cryptography"],
+    "type": "Full Time",
+    "qualification": "Bachelor"
+  },
+  {
+    "name": "Hana",
+    "age": 36,
+    "gender": "F",
+    "exp": 12,
+    "subjects": ["Computer Networks", "Cryptography", "Web Development"],
+    "type": "Full Time",
+    "qualification": "Ph.D"
+  },
+  {
+    "name": "Ibrahim",
+    "age": 27,
+    "gender": "M",
+    "exp": 4,
+    "subjects": ["Cybersecurity", "Ethical Hacking", "Computer Forensics"],
+    "type": "Full Time",
+    "qualification": "Bachelor"
+  },
+  {
+    "name": "Jasmin",
+    "age": 32,
+    "gender": "F",
+    "exp": 8,
+    "subjects": ["Cybersecurity", "Ethical Hacking", "Machine Learning"],
+    "type": "Full Time",
+    "qualification": "Masters"
+  },
+  {
+    "name": "Piet",
+    "age": 30,
+    "gender": "M",
+    "exp": 6,
+    "subjects": ["Java", "Database Management", "Network Security"],
+    "type": "Full Time",
+    "qualification": "Ph.D"
+  },
+  {
+    "name": "Lina",
+    "age": 35,
+    "gender": "F",
+    "exp": 9,
+    "subjects": ["Java", "Database Management", "Network Security"],
+    "type": "Full Time",
+    "qualification": "Masters"
+  }
+]

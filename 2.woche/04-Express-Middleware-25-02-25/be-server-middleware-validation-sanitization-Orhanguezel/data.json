@@ -1,0 +1,14 @@
+{
+    "firstName": "steve",
+    "lastName": "stevenson",
+    "age": "129",
+    "fbw": "36",
+    "profession": "Musician",
+    "favoriteBands": [
+      "Radiohead",
+      "Motorhead",
+      "Machinehead",
+      "The talking heads"
+    ],
+    "email": "steve@metallica.com"
+  }

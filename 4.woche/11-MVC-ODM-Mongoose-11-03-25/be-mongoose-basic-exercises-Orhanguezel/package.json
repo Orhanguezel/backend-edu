@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "mongoose": "^8.12.1"
+  },
+  "name": "be-mongoose-basic-exercises-orhanguezel",
+  "version": "1.0.0",
+  "description": "This exercise will allow you to practice basic operations on a MongoDB database with Mongoose.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dci-fbw-wd-24-d05/be-mongoose-basic-exercises-Orhanguezel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dci-fbw-wd-24-d05/be-mongoose-basic-exercises-Orhanguezel/issues"
+  },
+  "homepage": "https://github.com/dci-fbw-wd-24-d05/be-mongoose-basic-exercises-Orhanguezel#readme"
+}
