@@ -1,5 +1,5 @@
 import connect from "./db.js";
-import Scores from "./models.js";
+import Score from "./models.js";
 
 connect();
 
@@ -21,7 +21,7 @@ const randomDate = () => {
 const write = async () => {
   try {
     for (let i = 0; i < 900; i++) {
-      const newScore = new Scores({
+      const newScore = new Score({
         name: randomName(), 
         date: randomDate(), 
         score: Math.floor(Math.random() * 1000) + 1, 

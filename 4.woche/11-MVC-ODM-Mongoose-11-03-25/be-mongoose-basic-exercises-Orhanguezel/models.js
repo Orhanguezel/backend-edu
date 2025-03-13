@@ -1,8 +1,7 @@
 import mongoose,{model} from "mongoose";
 
-const{Schema} = mongoose;
 
-const ScoresSchema = new Schema(
+const ScoreSchema = new mongoose.Schema(
   {
     name: { type: String, required: true,index: false},
     date: { type: Date, required: true },
@@ -11,5 +10,5 @@ const ScoresSchema = new Schema(
   },
 );
 
-const Scores = model("Scores", ScoresSchema);
-export default Scores;
+const Score = model("Score", ScoreSchema);
+export default Score;
