@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animal shelter Admin UI</title>
+  <style>
+    #backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100svw;
+      width: 100vw;
+      height: 100svh;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hide {
+      display: none;
+    }
+
+    #modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Animal shelter Admin UI</h1>
+
+  <form id="new-animal">
+    <fieldset>
+      <legend>Add new animal</legend>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div>
+        <label for="desc">Desc</label>
+        <input type="text" name="desc" id="desc" />
+      </div>
+      <button>Add new animal</button>
+    </fieldset>
+  </form>
+
+  <h2>Current animals</h2>
+  <table border="1" width="800">
+    <thead>
+      <th>Name</th>
+      <th>Reserved</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <template id="actions">
+    <button onClick="remove(this)">Remove</button>
+    <button onClick="reserve(this)">Reserve</button>
+    <button onClick="edit(this)">Edit</button>
+  </template>
+
+  <div id="backdrop" class="hide"></div>
+  <div id="modal" class="hide">
+    <fieldset>
+      <legend>Edit</legend>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="edit-name" />
+      </div>
+      <div>
+        <label for="desc">Desc</label>
+        <input type="text" name="desc" id="edit-desc" />
+      </div>
+      <button onClick="doEdit(this)">Edit</button>
+    </fieldset>
+  </div>
+
+  <script>
+    // TODO: Fetch actual data!
+    // TODO (de): Aktuelle Daten abrufen!
+
+
+    const table = document.querySelector("tbody");
+    const actions = document.querySelector("#actions").innerHTML;
+
+    async function getAnimals() {
+      try {
+        const res = await fetch('http://localhost:8888/animals');
+        if (!res.ok) {
+          throw new Error("failed to fetch data!");
+
+        }
+        const data = await res.json();
+        console.log(data);
+
+        data.forEach((animal) => {
+          const tr = document.createElement("tr");
+          tr.id = animal._id;
+          tr.innerHTML = `<td>${animal.name}</td><td>${animal.reserved}</td><td>${animal.desc}</td><td data-id="${animal._id}">${actions}</td>`;
+          table.append(tr);
+        });
+      } catch (error) {
+        console.log(error.message); Reserve
+
+      }
+    }
+    getAnimals();
+
+    const newAnimalForm = document.querySelector("#new-animal");
+
+    newAnimalForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const desc = document.getElementById('desc').value;
+
+      fetch('http://localhost:8888/animal', {
+        method: "POST", headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ name, desc })
+      }).then(res => {
+        if (!res.ok) {
+          alert("Error!")
+        } else {
+          document.location.reload();
+        }
+      })
+
+
+    })
+
+
+    async function remove(element) {
+      const animalId = element.parentElement.dataset.id;
+
+      // const animal = fakeAnimals.find((a) => a.id == animalId);
+      try {
+        const res = await fetch(`http://localhost:8888/animal/${animalId}`, {
+          method: "DELETE", headers: {
+            "Content-Type": "application/json"
+          }
+        })
+        if (!res.ok) {
+          alert("Error!")
+        } else {
+          document.location.reload();
+        }
+
+      } catch (error) {
+        console.log(error);
+
+      }
+
+
+      // TODO: Make DELETE request to the API for this animal
+      // TODO (de): Sende eine DELETE-Anfrage an die API für dieses Tier
+
+      // If the request is successful, refresh the page
+      // Wenn die Anfrage erfolgreich ist, lade die Seite neu
+      // document.location.reload();
+    }
+
+    function reserve(element) {
+      const animalId = element.parentElement.dataset.id;
+      const animal = fakeAnimals.find((a) => a.id == animalId);
+      if (animal.reserved) {
+        return alert("Animal already reserved");
+      }
+
+      // TODO: Make PATCH request to the API for this animal
+      // Only send "{ reserved: true }" as the request
+
+      // TODO (de): Sende eine PATCH-Anfrage an die API für dieses Tier
+      // Sende nur "{ reserved: true }"" als Anfrage
+
+      // If the request is successful, refresh the page
+      // Wenn die Anfrage erfolgreich ist, lade die Seite neu
+      document.location.reload();
+    }
+
+    function edit(element) {
+      const bg = document.querySelector("#backdrop");
+      const modal = document.querySelector("#modal");
+      bg.classList.remove("hide");
+      modal.classList.remove("hide");
+
+      const animalId = element.parentElement.dataset.id;
+      const animal = fakeAnimals.find((a) => a.id == animalId);
+      document.querySelector("#edit-name").value = animal.name;
+      document.querySelector("#edit-desc").value = animal.desc;
+
+      modal.dataset.id = element.parentElement.dataset.id; // Save animal ID into element data attributes
+    }
+
+    function doEdit() {
+      const modal = document.querySelector("#modal");
+      const animalId = modal.dataset.id;
+      const animal = fakeAnimals.find((a) => a.id == animalId);
+
+      const newName = document.querySelector("#edit-name").value;
+      const newDesc = document.querySelector("#edit-desc").value;
+
+      // TODO: Make PUT request to the API for this animal
+      // TODO (de): Sende eine PUT-Anfrage an die API für dieses Tier
+
+      // If the request is successful, refresh the page
+      // Wenn die Anfrage erfolgreich ist, lade die Seite neu
+      document.location.reload();
+    }
+  </script>
+</body>
+</html>
